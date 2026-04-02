@@ -18,3 +18,21 @@
   colcon build
   ros2 launch velodyne-all-nodes-VLP16-launch.py
   ```
+## 2.2. connection check
+  ```bash
+  sudo apt install wireshark
+  sudo wireshark
+  ```
+## 2.3. params modify  
+  ```bash
+  cd ~/<your_Ws>/src/velodyne/velodyne_driver/config
+  gedit VLP16-velodyne_driver_node-params.yam
+  ```
+## 2.4. build and run
+  ```bash
+  source /opt/ros/humble/setup.bash
+  cd ~/<your_Ws>/
+  colcon build
+  source install/setup.bash
+  ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py
+  ```
