@@ -36,3 +36,17 @@
   source install/setup.bash
   ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py
   ```
+#3. Navigation and SLAM PACKAGE 
+##3.1 install
+  ```bash
+  sudo apt install ros-humble-bondcpp
+  sudo apt install libsuitesparse-dev
+  sudo apt install ros-humble-navigation2
+  sudo apt install ros-humble-nav2-bringup
+  ```
+  ```bash
+  cd ~/<your_ws>/src/
+  git clone -b humble https://github.com/SteveMacenski/slam_toolbox.git
+  cd ~/<your_ws>
+  colcon build
+  ```
