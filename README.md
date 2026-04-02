@@ -5,3 +5,16 @@
   * ***Odom Topic***이 구성되어 있어야 함
   * ***odom -> base_link***간의 ***dynamic tf***가 구성되어 있어야 함
   *  ***사용하는 모든 토픽의 timestamp가 동일해야함***
+
+# 2. LiDAR Package
+## 2.1. install
+  ```bash
+  sudo apt-get install ros-humble-velodyne
+  mkdir -p ~/<your_ws>/src
+  git clone https://github.com/ros-drivers/velodyne.git
+  cd ..
+  source /opt/ros/humble/setup.bash
+  rosdep install --from-paths src --ignore-src --rosdistro humble –y –r
+  colcon build
+  ros2 launch velodyne-all-nodes-VLP16-launch.py
+  ```
