@@ -50,3 +50,10 @@
   cd ~/<your_ws>
   colcon build
   ```
+# 4. URDF and Laumch 
+## 4.1 URDF modify 
+  * revolute -> fix
+  * add lidar
+  * base -> base_link rename
+  * add base_footpirnt
+  * add joint(base_link <->base_footprint)
