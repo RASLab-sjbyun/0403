@@ -151,6 +151,6 @@ self.tf_broadcaster.sendTransform(<msg>)
 # 7 lidar time synchronization
 ## 7.1. topic name chaneg
   * 현재 velodyne에서 발행하고 있는 scan 토픽을 scan_base라는 이름으로 발행되도록 변경
-  * * scan_base <- go2 시간 연동 
+  * scan <- scan_base <- go2 시간 연동 
 
   
