@@ -57,3 +57,6 @@
   * base -> base_link rename
   * add base_footpirnt
   * add joint(base_link <->base_footprint)
+
+# 5. odom topic publisehr 
+## 5.1 odom data sub and pub 
