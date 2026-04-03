@@ -59,7 +59,7 @@
   * add joint(base_link <->base_footprint)
 
 # 5. odom topic publisehr 
-## 5.1 odom data sub and pub 
+## 5.1 odom data sub and pub (sub: '/utlidar/robot_odom', child_frame_id: 'base_link')
 ```bash
 lab@lab:~$ ros2 interface show nav_msgs/msg/Odometry 
 # This represents an estimate of a position and velocity in free space.
